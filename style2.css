@@ -1,0 +1,55 @@
+/* Add styles for the interactive UI elements */
+.btn {
+  transition: transform 0.3s ease-in-out;
+}
+
+.btn:hover {
+  transform: scale(1.2);
+}
+
+.slider {
+  width: 200px;
+  height: 10px;
+  background-color: gray;
+  transition: width 0.3s ease-in-out;
+}
+
+.slider:hover {
+  width: 300px;
+}
+
+.toggle-btn {
+  transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.toggle-btn:hover {
+  background-color: lightgray;
+}
+
+/* Add styles for the section with pseudo-elements */
+.pseudo-elements::before {
+  content: "Before Pseudo-Element";
+  color: blue;
+}
+
+.pseudo-elements::after {
+  content: "After Pseudo-Element";
+  color: red;
+}
+
+/* Add styles for the 3D component */
+.three-d-element {
+  transform-style: preserve-3d;
+  /* Add 3D transform styles here */
+}
+
+/* Add styles for custom cursors */
+body {
+  cursor: url('cursor.png'), auto;
+}
+
+/* Add styles for visual feedback */
+.btn:active {
+  background-color: gray;
+}
